@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert , Prompt and Confirm </title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+</body>
+    <script>
+        // Alert in JS
+        //    alert  in in-browser java script - Does not return anything
+        // alert("This is an Alert");
+        
+        // Prompt in JS 
+        // let name = prompt("What is your Name?","Guest");
+        // console.log(name);
+
+        // Confirm in JS 
+
+        let deletepage = confirm("Do you really want to delete this page?");
+        // console.log(deletepage);
+
+        if(deletepage){
+             console.log("Page deleted successfully");
+        }
+        else{
+            console.log("Page not deleted");
+        }
+
+    </script>
+</html>

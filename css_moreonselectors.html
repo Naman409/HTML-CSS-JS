@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: cyan;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* div li p{
+            background-color: black;
+            color: white;
+            font-weight: bold;*/
+         
+         /* Isse div ke ander jo direct p hai bas usko hi target karega  */
+         /* div > p{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }  */
+        /* If p is right after div i.e p is the next sibling of div   */
+            div + p{
+                background-color: blue;
+                color: silver;
+            }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"> <p>This is another paragraph inside li</p>  </li>
+                <li>This will not get affected</li>
+                <p>This is a para inside ul </p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

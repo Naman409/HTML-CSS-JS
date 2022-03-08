@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Size Units </title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container {
+            /* width: 400px;
+            height: 300px; */
+            /* vh and vw stands for view height and view width  */
+             width: 100vw;  /*it will take 100% width of the page */
+             height: 100vh;  /*it will take 100% height of the page */
+            font-size: 10px;
+            border: 2px solid black;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+        /* agar text ki size parent ke text ki size ke multiple me badhani ho to em ka use karenge  */
+        #first {
+            /* font-size: 3em;
+            padding: 3em; */
+        }
+        #second{
+            /* font-size: 3rem;
+            padding: 3rem;   */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is First heading</h1>
+        <h1 id="second">This is Second heading</h1>
+        <h1 id="third">This is Third heading</h1>
+    </div>
+</body>
+
+</html>

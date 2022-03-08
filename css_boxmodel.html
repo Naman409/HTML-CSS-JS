@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color:rgb(12 12 12);
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+    .container{
+        background-color: rgb(236 245 101);
+        border: 3px solid #e20f49;
+        border-radius: 15px;
+        /* padding: 30px ;
+        margin: 30px  ; this is one way of giving padding.This will give padding from all sides.We can even customise it as shown below... */
+        /* we can do it by setting it as padding top right bottom left  */
+        /* Or we can directly write it in a form of padding/margin : top right bottom left; as shown below */
+        /* padding: 20px 0px 20px 40px;
+        margin: 30px; */
+        /* padding: y(top/bottom) x(left/right) */
+        padding: 35px 20px;
+        margin: 34px 19px;
+        width: 300px;
+       
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h3>This is my Heading</h3>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maxime facilis asperiores ipsam corporis neque nemo aut quam. Omnis, dolores perspiciatis excepturi nulla architecto repellendus corrupti dignissimos saepe repellat rem consequatur molestias earum nihil, harum odit aliquam obcaecati ad voluptate fugiat numquam laborum in! Et nihil voluptatum quia eos hic.</p>
+    </div>
+    <div class="container">
+    <h3>This is my Heading</h3>
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maxime facilis asperiores ipsam corporis neque nemo aut quam. Omnis, dolores perspiciatis excepturi nulla architecto repellendus corrupti dignissimos saepe repellat rem consequatur molestias earum nihil, harum odit aliquam obcaecati ad voluptate fugiat numquam laborum in! Et nihil voluptatum quia eos hic.</p>
+    </div>
+    <div class="container">
+    <h3>This is my Heading</h3>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maxime facilis asperiores ipsam corporis neque nemo aut quam. Omnis, dolores perspiciatis excepturi nulla architecto repellendus corrupti dignissimos saepe repellat rem consequatur molestias earum nihil, harum odit aliquam obcaecati ad voluptate fugiat numquam laborum in! Et nihil voluptatum quia eos hic.</p>
+    </div>
+</body>
+</html>

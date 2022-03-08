@@ -1,0 +1,38 @@
+doctype html 
+html    
+    head 
+        style 
+            include ../static/style.css
+    body 
+        nav#navbar
+            ul 
+                li #[a(href="/") Home] 
+                li #[a(href="/") About] 
+                li #[a(href="/") Contact] 
+                li #[a(href="/") Products] 
+                li #[a(href="/") Services] 
+                 
+
+        section#introSection
+            div   Welcome to my first pug website
+            div   This is a demo website
+            
+        section#missionSection
+            h2  Our mission
+            
+            div.card 
+                h3 This is card1   
+            div.card 
+                h3 This is card2   
+            div.card 
+                h3 This is card3   
+
+
+        section#sponsorsSection
+            |   Section for Sponsors  
+
+        footer#footer 
+            |   This is our footer
+
+        script 
+            include ../static/index.js        

@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    color: silver;
+    padding-right: 75px;
+    
+}
+
+#logo img{
+    height: 20px;
+    margin-right: 6px;
+
+}
+
+#navbar{
+    background-color: black;
+}
+
+#navbar ul{    
+    display: flex;
+    flex-direction: row;
+    margin-left: 12px;
+    height: 50px;
+
+}
+#navbar li{    
+    list-style: none;
+    padding: 10px 25px;
+    font-size: 24px;
+}
+#navbar li a{    
+    font-family: 'Zen Tokyo Zoo', cursive;
+    text-decoration: none;
+    color: silver;
+}
+#navbar li a:hover{    
+    font-family: 'Zen Tokyo Zoo', cursive;
+    text-decoration: none;
+    color: white;
+}
+
+#introSection{
+    background: center / cover no-repeat url("/static/bgimg.jpg");
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: floralwhite;
+    height: 300px;
+}
+
+#missionSection{
+    height: 300px;
+    background: white;    
+}
+#missionSection h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.card {
+    display: inline-block;
+    border: 2px solid black;
+    width: 25%;
+    margin: 26px 50px;
+    height: 220px;
+    border-radius: 20px;
+}
+
+.card h3{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.card-box{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 14px;
+}
+
+.card-img{
+    height: 100px;
+    padding: 2px 2px;
+}
+
+.card-img img{
+    height: inherit;
+}
+
+
+#sponsorsSection{
+    height: 240px; 
+    background-color: pink;
+}
+
+#sponsorsSection h2{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 24px;
+    margin: -3px 0px;
+
+}
+
+.sponsor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img2 img{
+    height: 145px;
+    margin-right: 60px;
+    padding-left: 25px;
+
+}
+.img3 img{
+    height: 136px;
+    padding-top: 37px;
+    margin-right:43px ;
+}
+.img4 img{
+    height: 163px;
+}
+
+#footer{
+    height: 35px; 
+    background-color: black;
+}
+
+#footer h2{
+    text-align: center;
+    font-weight: bold;
+    color: silver;
+    font-size: 14px;
+    padding-top: 9px;
+}

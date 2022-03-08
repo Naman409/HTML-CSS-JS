@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 190px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type=text]{
+            padding: 10px;
+            border: 2px solid black;
+        }
+        input[type=email]{
+            padding: 10px;
+            border: 2px solid brown;
+        }
+        a[target]{
+            font-size: 20px;
+            color: purple;
+        }
+        a[target=_self]{
+            font-size: 20px;
+            color: blue;
+        }
+        li:nth-child(even){
+            color: crimson;
+        }
+        li:nth-child(2n+1){
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google" target="_blank">Go to Google</a></h1>
+        <h1><a href="http://facebook" target="_self">Go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Password">
+            <input type="email" placeholder="Enter your email">
+            <input type="submit" Submit >
+        </form>
+        <ul>
+            <li class="item" id="item1">Item 1</li>
+            <li class="item" id="item2">Item 2</li>
+            <li class="item" id="item3">Item 3</li>
+            <li class="item" id="item4">Item 4</li>
+            <li class="item" id="item5">Item 5</li>
+        </ul>
+    </div>
+</body>
+</html>

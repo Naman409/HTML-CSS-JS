@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+</head>
+
+<body>
+    <h2>This is HTML Form tutorial</h2>
+    <!-- mere is form ka data backend.php file me jaakr submit kr do - ye next line ka matlab hai-->
+    <!-- Label tag se agar aap naam pr bhi click kro ge toh vo option select ho jayega aur label for ke baad wahi likhna hai jis id ko apko label karna hai  -->
+    <form action="backend.php"></form>
+    <label for="name"> Name</label>
+    <input type="text" name="myName" id="name">
+    <div>
+        <br>
+        <label for="roleno"> Roll No</label>
+        <input type="number" name="myRole" id="roleno">
+    </div>
+    <br>
+    <label for="email">Email</label>
+    <input type="email" name="myEmail" id="email">
+    </div>
+    <div>
+        <br>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <!-- It will be already checked , if we put ckecked like this in next column -->
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligiblity" checked>
+        </div>
+        <br>
+        <div>
+            Gender:
+            Male: <input type="radio" name="Gender">
+            Female: <input type="radio" name="Gender">
+            Others: <input type="radio" name="Gender">
+        </div>
+        <br>
+        <div>
+            <!-- label tag ke baad select tag me jakar option tag me jo bhi daloge usse aap select kr sakte ho -->
+            <!-- option 3 me selected se venue car pahale se hi selected hi rahegi -->
+            <!-- Multiple is used for selection of multiple cars by the visitor -->
+            <!-- Multiple wala option bhi acche se kaam nahi kr rha hai -->
+            <label for="car"> SELECT YOUR CAR</label>
+            <Select id="car" name="car" size="5" multiple>
+                <option value="Baleno"> Baleno</option>
+                <option value="Ignis"> Ignis</option>
+                <option value="WagonR"> WagonR</option>
+                <option value="Sonet"> Sonet</option>
+                <option value="Venue" selected>Venue </option>
+            </Select>
+        </div>
+        <br>
+        <div>
+            Write about yourself <br><textarea name="mytext" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <!-- Abhi isme reset wala option work nahi kr raha hai  -->
+            <input type="reset" value="Reset Now">
+
+        </div>
+        <br>
+</body>
+
+</html>
